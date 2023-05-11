@@ -1,0 +1,96 @@
+.div-form-login{
+    /*background-color: crimson;*/
+    width: fit-content;
+    text-align: center;
+}
+.login-form{
+    padding-top: none;
+    background-color: #F5FFE1;
+    width: 500px;
+    border: 3px solid darkslategrey;
+    border-radius: 10px;
+}
+.form-title{
+    display: flex;
+    justify-content: center;
+    margin-top: none;
+    background-color: #B2E97D;
+    border: 2px solid darkslategrey;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+.titre2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 10px;
+}
+.little{
+    font-size: small;
+    justify-content: center;
+}
+.container-id{
+    /*background-color: red;*/
+    display: flex;
+    justify-content: center;
+}
+.container-mdp{
+    /*background-color: green;*/
+    display: flex;
+    justify-content: center;
+}
+.container-submit-btn{
+    display: flex;
+    justify-content: center;
+}
+input[type=text]{
+    margin-top: 15px;
+    width: 250px;
+    height: 30px;
+    margin-bottom: 7.5px;
+}
+input[type=password]{
+    margin-top: 7.5px;
+    height: 30px;
+    width: 250px;
+    margin-bottom: 15px;
+}
+input[type=submit]{
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+}
+body{
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.centrer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  text-align: center;
+}
+.ruban-fronton{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    background-color: #B2E97D;
+    border: 3px solid darkslategrey;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.img-suite{
+    display: block;
+}
+.img-haut{
+    width: 500px;
+    height: 300px;
+}
+.pres-txt{
+    margin-top: 50px;
+    font-size: 20px;
+}
+

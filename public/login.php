@@ -1,31 +1,48 @@
+<!DOCTYPE html>
 <html>
- <head>
- <meta charset="utf-8">
- <!-- importer le fichier de style -->
- <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
- </head>
- <body>
- <div id="container">
- <!-- zone de connexion -->
- 
- <form action="verification.php" method="POST">
- <h1>Connexion</h1>
- 
- <label><b>Nom d'utilisateur</b></label>
- <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<?php
+require('database.php');
+session_start();
+if (isset($_POST['username'])){
+  $username = stripslashes($_REQUEST['username']);
+  $username = mysqli_real_escape_string($connect, $username);
 
- <label><b>Mot de passe</b></label>
- <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+  $password = stripslashes($_REQUEST['password']);
+  $password = mysqli_real_escape_string($connect, $password);
 
- <input type="submit" id='submit' value='LOGIN' >
- <?php
- if(isset($_GET['erreur'])){
- $err = $_GET['erreur'];
- if($err==1 || $err==2)
- echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
- }
- ?>
- </form>
- </div>
- </body>
-</html>
+  
+  $firstname = stripslashes($_REQUEST['firstname']);
+  $firstname = mysqli_real_escape_string($connect, $firstname);
+
+  
+
+    $query = "SELECT * FROM users WHERE username = '".$username."' and password = '".$password."' ";
+    //$requete = "SELECT count(*) FROM users WHERE user_name = '".$username."' and pass_word = '".$password."' ";
+  $result = mysqli_query($connect,$query) or die(mysql_error());
+  $rows = mysqli_num_rows($result);
+  if($rows==1){
+      $_SESSION['username'] = $username;
+      
+      $_SESSION['firstname'] = $firstname;
+      header("Location: index.php");
+  }else{
+    $message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
+  }
+}
+?>
+<form class="box" action="" method="post" name="login">
+    <h1 class="box-title">Connexion</h1>
+    <input type="text" class="box-input" name="username" placeholder="Nom d'utilisateur" required>
+    <input type="password" class="box-input" name="password" placeholder="Mot de passe" required>
+    <input type="submit" value="Connexion " name="submit" class="box-button">
+    <p class="box-register">Vous êtes nouveau ici? <a href="register.php">S'inscrire</a></p>
+
+    <?php if (! empty($message)) { ?>
+    <p class="errorMessage"><?php echo $message; ?></p>
+<?php } ?>
+</form>
+</body>

@@ -1,3 +1,13 @@
+<?php
+  // Initialiser la session
+  session_start();
+  // Vérifiez si l'utilisateur est connecté, sinon redirigez-le vers la page de connexion
+  if(!isset($_SESSION["username"])){
+    header("Location: login.php");
+    exit(); 
+  }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,7 +15,7 @@
         <title>Gestion - Centre Fronton</title>
         <link rel="stylesheet" href="css/style.css">
         <script src="script/defilement.js"></script>
-        <link rel="icon" type="image/x-icon" href="/img/icon_fronton_192px.png">
+        <link rel="icon" type="image/x-icon" href="/img/ico_fronton-192px.ico">
       </head>
 
       <body>
@@ -45,6 +55,9 @@
             <a href="accueil.html">Cliqueddddddddd ici</a>
           </div>
         </div>
-        
+        <div class="sucess">
+    <h1>Bienvenue <?php echo $_SESSION['username']; ?> et <?php echo $_SESSION['firstname']; ?> !</h1>
+    <p>C'est votre tableau de bord.</p>
+    <a href="logout.php">Déconnexion</a>
       </body>
 </html>

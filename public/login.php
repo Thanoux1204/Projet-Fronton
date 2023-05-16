@@ -45,9 +45,9 @@ if (isset($_POST['username'])){
         <h2 class="commune">Commune de FRONTON - 31620, Haute-Garonne</h2>
       </div>
 
-      <div class="presentation-page">
+      <!--<div class="presentation-page">
         <p class="pres-txt">Pour accéder à l'interface de sécurité, vous devez être un utilisateur autorisée et vous connecter</p>
-      </div>
+      </div>-->
 
       <!--<div class="centrer">  
         <div class="div-form-login">-->

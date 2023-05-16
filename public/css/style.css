@@ -4,14 +4,42 @@
     /*width: fit-content;
     text-align: center;
 }*/
+.region-lg{
+    /*background-color: green;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    width: 28%;
+    overflow: hidden;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    margin-left: 0.5rem;
+    background-color: #7878784e;
+    backdrop-filter: blur(5px);
+    border: 1px solid #00352E;
+    border-radius: 3px;
+    
+    box-shadow: 0px 0px 10px #000,
+                0px 0px 30px #777;
+
+}
+.item-reg-lg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.min-log-fronton{
+    width: 20%;
+}
+
 .login-form{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
     padding: 0 2rem 0;
     width: 300px;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%,-50%);
     background-color: #7878784e;
     backdrop-filter: blur(5px);
     width: 500px;
@@ -34,6 +62,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     letter-spacing: 10px;
+    color: #8CA3BB;
 }
 .login-form .little {
     margin-top: 10px;
@@ -42,6 +71,7 @@
     margin: none;
     padding: none;
     box-sizing: border-box;
+    color: white;
 }
 .container-form{
     /*background-color: red;*/
@@ -150,9 +180,7 @@ input.slide-hover-left-1:hover {
 body{
     margin: 0;
     box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
     /*background-image: url('https://images.unsplash.com/photo-1462058329188-35b241c5e156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');*/
     background-image: url('https://www.mairie-fronton.fr/wp-content/uploads/2020/03/Urbanisme.jpg');
     background-size: cover;

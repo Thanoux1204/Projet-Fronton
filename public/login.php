@@ -36,14 +36,20 @@ if (isset($_POST['username'])){
 }
 ?>
   <body>
-    <div class="img-suite">
+    <div class="region-lg">
+      <div class="item-reg-lg">
+        <img class="min-log-fronton" src="img/logo-fronton.png">
+        <h3>FRONTON - 31620, Haute-Garonne</h3>
+      </div>
+    </div>
+    <!--<div class="img-suite">
       <img class="img-haut" src="img/fronton1.jpg">
-      <!--<img class="img-haut" src="img/fronton2.jpg">
-      <img class="img-haut" src="img/fronton3.jpg">-->
-      </div>
-      <div class="ruban-fronton">
+      <img class="img-haut" src="img/fronton2.jpg">
+      <img class="img-haut" src="img/fronton3.jpg">
+      </div>-->
+      <!--<div class="ruban-fronton">
         <h2 class="commune">Commune de FRONTON - 31620, Haute-Garonne</h2>
-      </div>
+      </div>-->
 
       <!--<div class="presentation-page">
         <p class="pres-txt">Pour accéder à l'interface de sécurité, vous devez être un utilisateur autorisée et vous connecter</p>
@@ -70,7 +76,6 @@ if (isset($_POST['username'])){
               <input class="submitbtn slide-hover-left-1" type="submit" value="Se connecter" class="pulse">
             </div>
             <p class="little"><b>Mot de passe oublié ou compte inexistant ? Veuillez contacter l'administrateur</b></p>
-            
           </form>
           
         <!--  <a href="accueil.html">Cliqueddddddddd ici</a>

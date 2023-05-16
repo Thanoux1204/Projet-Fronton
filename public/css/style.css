@@ -1,17 +1,27 @@
-.div-form-login{
+
+/*.div-form-login{
     /*background-color: crimson;*/
-    width: fit-content;
+    /*width: fit-content;
     text-align: center;
-}
+}*/
 .login-form{
-    padding-top: none;
-    background-color: #F5FFE1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 2rem 0;
+    width: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #7878784e;
+    backdrop-filter: blur(5px);
     width: 500px;
-    border: 3px solid darkslategrey;
-    border-radius: 10px;
+    border: 1px solid #00352E;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px #000,
+                0px 0px 30px #777;
 }
-.form-title{
-    display: flex;
+/*.form-title{
+    
     justify-content: center;
     margin-top: none;
     background-color: #B2E97D;
@@ -19,59 +29,142 @@
     border-radius: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
-}
+}*/
 .titre2{
     margin-top: 5px;
     margin-bottom: 5px;
     letter-spacing: 10px;
 }
-.little{
-    font-size: small;
+.login-form .little {
+    margin-top: 10px;
+    font-size: x-small;
     justify-content: center;
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
 }
-.container-id{
+.container-form{
     /*background-color: red;*/
-    display: flex;
-    justify-content: center;
+    /*display: flex;*/
+    
+    /*width: fit-content;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    background-color: red;
+    display: block;*/
+    width: 100%;
+    overflow: hidden;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    border-bottom: 2px solid #00352E;
+    
+}
+.container-form i{
+    width: 1.6rem;
+    float: left;
+    text-align: center;
 }
 .container-mdp{
     /*background-color: green;*/
-    display: flex;
-    justify-content: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    width: 100%;
+    overflow: hidden;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    border-bottom: 2px solid green;
+
+
 }
 .container-submit-btn{
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
 }
-input[type=text]{
+
+.container-form input{
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    font-size: 1.1rem;
+    width: 80%;
+}
+
+/*input[type=text]{
     margin-top: 15px;
     width: 250px;
     height: 30px;
     margin-bottom: 7.5px;
+    border: none;
+    outline: none;
+    background: none;
+    color: red;
+    font-size: 1.1rem;
+    width: 80%;
 }
 input[type=password]{
-    margin-top: 7.5px;
+    /*margin-top: 7.5px;
     height: 30px;
     width: 250px;
     margin-bottom: 15px;
-}
+    border: none;
+    outline: none;
+    background: none;
+    color: red;
+    font-size: 1.1rem;
+    width: 80%;
+}*/
 input[type=submit]{
-    height: 30px;
+    /*height: 30px;
     width: 150px;
-    margin-bottom: 5px;
+    margin-bottom: 5px;*/
+    width: 100%;
+    background: none;
+    border: 2px solid #00352E;
+    color: #fff;
+    padding: 5px;
+    font-size: 1.2rem;
+    margin: 24px 0 12px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.5s;
 }
+input[type=submit]:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+/* slide hover left -1 css */
+
+input.slide-hover-left-1 {
+    background-image: linear-gradient(0, #0A3D5B, #0A3D5B);
+    background-size: 0;
+    transition: .8s;
+    background-repeat: no-repeat;
+}
+
+input.slide-hover-left-1:hover {
+    background-size: 100%;
+    color: #fff;
+}
+
 body{
-  
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*background-image: url('https://images.unsplash.com/photo-1462058329188-35b241c5e156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');*/
+    background-image: url('https://www.mairie-fronton.fr/wp-content/uploads/2020/03/Urbanisme.jpg');
+    background-size: cover;
 }
+
 .centrer{
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
   text-align: center;
+
 }
 .ruban-fronton{
     margin-left: auto;
@@ -92,5 +185,9 @@ body{
 .pres-txt{
     margin-top: 50px;
     font-size: 20px;
+}
+
+::placeholder{
+    color: #fff
 }
 

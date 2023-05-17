@@ -22,13 +22,15 @@
                 0px 0px 30px #777;
 
 }
+
 .item-reg-lg{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .min-log-fronton{
-    width: 20%;
+    display: flex;
+    width: 12%;
 }
 
 .login-form{

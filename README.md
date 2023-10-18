@@ -17,4 +17,8 @@
 + Air Quality sensor
 + Camera
 + Touch Screen
+
+
+> [!IMPORTANT]
+> This is a local application, there's not password for the database
  

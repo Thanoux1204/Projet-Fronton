@@ -12,7 +12,9 @@
 > We have to see the measures taken in different rooms of the school
 
 
-> ### Different Sensors ?
-> + Temperature & Humidity sensor
-> + Air Quality sensor
-> + 
+### Different Sensors & stuffs ?
++ Temperature & Humidity sensor
++ Air Quality sensor
++ Camera
++ Touch Screen
+ 
